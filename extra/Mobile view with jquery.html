@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./navbar-1.css">
+    <script src="https://kit.fontawesome.com/0d1063cf1c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <title>Mobile-View Nav Bar</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="main_header">
+        <div class="container">
+            <div class="header">
+                <!-- LOGO -->
+                <div class="logo">
+                    <a href="/"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+
+                <!-- Navigation -->
+                <ul class="nav">
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./product.html">Product</a></li>
+                    <li><a href="#">Promo</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <!-- SEARCH -->
+                <div class="search">
+                    <a href="#"><img src="./img/search.png" alt="search"></a>
+                </div>
+            </div>
+
+            <div class="mobile-header">
+                <div class="bar">
+                    <a href="javascript:void(0)" id="mobilebars"><i class="fa-solid fa-bars"></i></a>
+                    <div class="logo">
+                        <a href="/"> <img src="./images/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="search">
+                        <a href="#"><img src="./images/Search.png" alt="search"></a>
+                    </div>
+                </div>
+
+                <ul id="mobile-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Promo</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- POPULARMENU -->
+    <div class="popular-menu-main">
+        <div class="container">
+            <div class="popular-menu">
+                <h4>Popular Menu</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Vivamus lacinia odio vitae vestibulum vestibulum. </p>
+
+
+                <!-- cards -->
+                <div class="cards">
+                    <div class="card">
+                        <img src="./img/card-1.png" alt="Card One">
+                        <h5>Title Here</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/card-2.png" alt="Card Two">
+                        <h5>Title Here</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/card-3.png" alt="Card Three">
+                        <h5>Title Here</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#mobilebars").click(function () {
+                $("#mobile-nav").slideToggle("slow");
+            });
+        });
+    </script>
+</body>
+
+</html>

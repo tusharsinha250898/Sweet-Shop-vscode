@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./navbar.css">
+    <script src="https://kit.fontawesome.com/0d1063cf1c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <title>Navbar</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="mainHeader">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <a href="/"> <img src="./images/logo.png" alt="logo"></a>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Promo</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="search">
+                    <a href="#"><img src="./images/Search.png" alt="search"></a>
+                </div>
+            </div>
+
+            <div class="mobile_header">
+                <div class="bars">
+                    <a href="javascript:void(0);" id="mobilebars"><i class="fa-solid fa-bars"></i></a>
+                    <div class="logo">
+                        <a href="/"> <img src="./images/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="search">
+                        <a href="#"><img src="./images/Search.png" alt="search"></a>
+                    </div>
+                </div>
+                <ul id="mobilenav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Promo</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#mobilebars").click(function () {
+                $("#mobilenav").slideToggle("slow");
+            });
+        });
+    </script>
+</body>
+
+</html>
